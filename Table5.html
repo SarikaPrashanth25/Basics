@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title>FORM</title>
+        <style>
+            select{
+                background-color: blue;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2><b>New Employee Details Form</b></h2>
+        </center>
+            <h3><b>Personal Details </b></h3>
+        <form autocomplete="off">
+
+        <table>
+            <tr>
+                <td rowspan="2"> <label for="">Your Name</label></td>
+                <td>
+                    <select name="title" id="title">
+                        <option value="" selected></option>
+                        <option value="">Mrs.</option>
+                        <option value="">Mr.</option>
+                        <option value="">Ms.</option>
+                </select>
+                </td>
+                <td><input type="text" name="firstname" required></td> 
+                <td><input type="text" name="middlename" required></td>
+                <td><input type="text" name="surname" required></td>
+         </tr>
+
+         <tr>
+             <td>Title</td>
+             <td>First Name</td>
+             <td>Middle Name</td>
+             <td>Surname</td>
+         </tr>
+
+         <tr>
+             <td>Gender</td>
+             <td>
+                 <input type="radio" value="Male" id="male" name="gender">
+                 <label for="">Male</label>
+        
+                 <input type="radio" value="Female" id="female" name="gender">
+                 <label for="">Female</label>
+            </td>
+         </tr>
+
+         <tr>
+             <td>Birth Date</td>
+             <td><input type="text" required></td>
+             
+         </tr>
+
+         <tr>
+             <td rowspan="4">Address</td>
+             <td><input type="text" name="streetaddress" required></td>
+             <td><input type="text" name="streetaddressline2"></td>
+         </tr>
+         <tr>
+             <td>Street Address</td>
+             <td>Street Address Line 2</td>
+         </tr>
+
+         <tr>
+             <td><input type="text" name="subrub" required></td>
+             <td><input type="text" name="state" required></td>
+             <td><input type="number" name="postcode" required></td>
+         </tr>
+
+         <tr>
+             <td>Subrub</td>
+             <td>State</td>
+             <td>Postcode</td>
+         </tr>
+
+         <tr>
+             <td rowspan="2">Contact</td>
+             <td>Home Phone</td>
+             <td>Mobile Phone</td>
+             <td>Email Address</td>
+         </tr>
+
+         <tr>
+             <td><input type="number" required></td>
+             <td><input type="number" required></td>
+             <td><input type="email" required></td>
+         </tr>
+
+         <tr>
+             <td>Are you an Australian?</td>
+             <td><input type="radio" value="yes" id="yes" name="areyouanaustralian?">
+                 <label for="">Yes</label>
+             
+                 <input type="radio" value="no" id="no" name="areyouanaustralian?">
+                     <label for="">No</label>
+             </td>
+         </tr>
+
+         <tr>
+             <td>Do you have a working visa?</td>
+             <td>
+                <input type="radio" value="yes" id="yes" name="doyouhaveaworkingvisa?">
+                 <label for="">Yes</label>
+             
+                 <input type="radio" value="no" id="no" name="doyouhaveaworkingvisa?">
+                     <label for="">No</label>
+             </td>
+         </tr>
+            <tr>
+                <td colspan="4"><h3><b>Employment Details</b></h3></td>
+              </tr>
+              
+                <tr>
+                    <td>Job Title</td>
+                    <td><input type="text" required></td>
+                </tr>
+    
+                <tr>
+                    <td>Commencement Date</td>
+                    <td><input type="date" required></td>
+                </tr>
+    
+                <tr>
+                    <td>File Tax Number</td>
+                    <td><input type="number" required></td>
+                </tr>
+    
+                <tr>
+                    <td>Employment Status</td>
+                    <td colspan="2"><input type="radio" value="Fulltime" id="fulltime" name="employmentstatus">
+                    <label for="">Full Time</label>
+                     <input type="radio" value="Parttime" id="parttime" name="employmentstatus">
+                    <label for="">Part Time</label>
+                    <input type="radio" value="Temporary" id="temporary" name="employmentstatus">
+                    <label for="">Temporary</label>
+                    <input type="radio" value="Casual" id="casual" name="employmentstatus">
+                        <label for="">Casual</label></td>
+                </tr>
+        
+       
+        
+            <tr>
+                <td colspan="4"><h3><b>Emergency Contact Details</b></h3></td>
+              </tr>
+              
+                <tr>
+                    <td rowspan="2">Name</td>
+                    <td>
+                        <select name="title" id="title">
+                            <option value="" disabled>Select</option>
+                            <option value="">Mrs</option>
+                            <option value="">Mr</option>
+                            <option value="">Ms</option>
+                    </select>
+                    </td>
+                    <td><input type="text" name="firstname" required></td>
+                    <td><input type="text" name="middlename" required></td>
+                    <td><input type="text" name="surname" required></td>
+                </tr>
+    
+                <tr>
+                    <td>Title</td>
+                    <td>First Name</td>
+                    <td>Middle Name</td>
+                    <td>Surname</td>
+                </tr>
+    
+                <tr>
+                    <td>Relationship</td>
+                    <td colspan="2"><input type="text" required></td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="2">Contact</td>
+                    <td>Home Phone</td>
+                    <td>Mobile Phone</td>
+                    <td>Email Address</td>
+                </tr>
+    
+                <tr>
+                    <td><input type="number" required></td>
+                    <td><input type="number" required></td>
+                    <td><input type="email" required></td>
+                </tr>
+        
+       
+        
+            <tr>
+                <td colspan="4"><h3><b>Banking Details</b></h3></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Bank</td>
+                <td>Bank Name</td>
+                <td>Bank Branch</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" cols="30"required></td>
+                <td><input type="text" cols="30" required></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Account</td>
+                <td>Account Name</td>
+                <td>Account Number</td>
+                <td>BSB Number</td>
+            </tr>
+
+            <tr>
+                <td><input type="text" required></td>
+                <td><input type="number" required></td>
+                <td><input type="number" required></td>
+            </tr>
+
+            <tr>
+                <dialog>
+                    <button type="button" id="closeButton">×</button>
+                </dialog>
+                   <td rowspan="5" align="up">Employee Signature</td>
+                <td colspan="2">
+                   <textarea id="dialogID" class="form-textarea" name="q11_notes" cols="40" rows="6" data-component="textarea" aria-labelledby="label_11"></textarea>
+                </td>
+            </tr>
+            <script>
+                document.getElementById("closeButton").onclick= function(){
+                   document.getElementById("dialogID").close();
+                };
+            </script>
+            <tr>
+                <td><input type="text" placeholder="Print your name here"></td>
+            </tr>
+
+            <tr>
+               <td><input type="text" placeholder="Enter date here"></td>
+            </tr>
+        </table>
+        
+          <button type="submit">Submit</button>
+        
+        </form>
+        
+    </body>
+</html>
